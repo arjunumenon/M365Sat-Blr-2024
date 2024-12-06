@@ -6,7 +6,7 @@
 
 # create AAD app
 echo "Creating Entra app..."
-appId=$(m365 entra app add --name M365Pune-M365Appn_Permission --multitenant --redirectUris http://localhost:3000 --apisDelegated https://graph.microsoft.com/Group.ReadWrite.All --grantAdminConsent --platform spa --query appId -o text)
+appId=$(m365 entra app add --name M365Devproxy-M365Appn_Permission --multitenant --redirectUris http://localhost:3000 --apisDelegated https://graph.microsoft.com/Group.ReadWrite.All --grantAdminConsent --platform spa --query appId -o text)
 
 # write app to env.js
 echo "Writing app to env.js..."
